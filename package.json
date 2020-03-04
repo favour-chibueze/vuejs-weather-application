@@ -9,16 +9,16 @@
   },
   "dependencies": {
     "core-js": "^3.6.4",
-    "vue": "^2.6.11"
+    "router": "^1.3.4",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.2.0",
     "@vue/cli-plugin-eslint": "~4.2.0",
     "@vue/cli-service": "~4.2.0",
-    "@vue/eslint-config-airbnb": "^5.0.2",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.7.2",
-    "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-vue": "^6.1.2",
     "vue-template-compiler": "^2.6.11"
   },
@@ -29,7 +29,7 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "@vue/airbnb"
+      "eslint:recommended"
     ],
     "parserOptions": {
       "parser": "babel-eslint"
@@ -39,5 +39,11 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "_id": "weather-app@0.1.0",
+  "extends": [
+    "plugin:vue/essential",
+    "@vue/airbnb"
+  ],
+  "readme": "ERROR: No README data found!"
 }
