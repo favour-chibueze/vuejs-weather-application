@@ -35,7 +35,7 @@ export default {
   data () {
     return {
       api_key: '9b7d847359a1f9b4897ab1b77d6fc7d3',
-      url_base: 'api.openweathermap.org/data/2.5/forecast?id=524901&APPID=1111111111',
+      url_base: 'https://api.openweathermap.org/data/2.5/',
       query: '',
       weather: {}
     }
@@ -43,7 +43,7 @@ export default {
    methods: {
     fetchWeather (e) {
       if (e.key == "Enter") {
-        fetch(`${this.url_base}weather?q=${this.query}&units=metric&APPID=${this.api_key}`)
+        fetch(`${this.url_base}weather?q=${this.query}&units=metric&appid=${this.api_key}`)
           .then(res => {
             return res.json();
           }).then(this.setResults);
@@ -150,4 +150,14 @@ main {
   font-style: italic;
   text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
 }
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1){
+  body {
+    background-color: lightgreen;
+  }
+}
+
 </style>
